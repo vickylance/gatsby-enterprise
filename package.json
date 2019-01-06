@@ -1,0 +1,36 @@
+{
+  "name": "gatsby-enterprise",
+  "version": "1.0.0",
+  "description": "A Enterprise grade gatsby starter solution",
+  "main": "index.js",
+  "scripts": {
+    "build:client": "cd ./client && gatsby build",
+    "develop:client": "cd ./client && gatsby develop",
+    "start": "npm run develop:client",
+    "format:client": "prettier --write \"client/src/**/*.js\"",
+    "format:server": "prettier --write \"server/src/**/*.js\"",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "postinstall": "cd client && yarn"
+  },
+  "keywords": [
+    "Gatsby",
+    "Enterprise",
+    "Starter"
+  ],
+  "author": "Vignesh S",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "dependencies": {
+    "hapi": "^17.8.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-notes": "^4.1.4",
+    "yarn": "^1.12.3"
+  }
+}
